@@ -1,0 +1,86 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#conteiner {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+    grid-template-columns: repeat(3, 1fr);
+}
+#form-dados-pessoais, #form-entrega, #form-pagamento{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    width: 25vw;
+    padding: 10px;
+    height: 60vh;
+    margin: 10vh 0px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.736);
+}
+#span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.imagem{
+    margin: 5px 0;
+    width: 23px;
+}
+.titulo {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nome, #telefone {
+    padding: 5px;
+    margin: 5px 0;
+    width: 20vw;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-image: url(assets/ico-ready.png);
+    background-position: right top;
+    background-repeat: no-repeat; 
+}
+#nome:focus, #telefone:focus{
+    box-shadow: 1px 2px 3px rgba(159, 159, 159, 0.736);
+}
+#nome::placeholder, #telefone::placeholder {
+    color: #b3b3b3;
+}
+#texto {
+    font-size: 14px;
+    margin: 0 5px;
+}
+#pagamento {
+    padding: 5px 0;
+    margin-top: 15px;
+}
+#pagamento-pix, #pagamento-cartao, #pagamento-boleto {
+    margin-left: 5px;
+}
+.botao {
+    border: 1px solid rgba(128, 128, 128, 0.737);
+    border-radius: 5px;
+    padding: 7px 10px;
+    background-color: #d81cd8;
+    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.736);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#botao {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.error{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+#boleto, input [type="radio"] {
+    color: aqua;
+}
