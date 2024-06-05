@@ -1,0 +1,73 @@
+.container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 10vh 100vh;
+}
+.container h3{
+    text-align: center;
+    align-content: center;
+}
+.container .sacolaGrid{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+.sacolaGrid .sacolaContent{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: end;
+}
+.sacolaContent .lista{
+    height: calc(100% - 3rem);
+    width: calc(100% - 3rem);
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.sacolaContent .lista .miniaturaCard{
+    min-height: 30%;
+    display: grid;
+    grid-template-columns: 25% 25% 20% 20% 10%;
+    grid-template-rows: 40% 60%;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid; 
+}
+.sacolaContent .lista .miniaturaCard img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.sacolaContent .valores{
+    height: calc(100% - 3rem);
+    width: calc(100% - 3rem);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 15% 20%;
+    justify-items: center;
+    align-items: center;
+}
+.sacolaContent .valores p{
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
+.sacolaContent .valores #subtotal,#frete,#total{
+    width: 80%;
+    padding-left: 20%;
+}
+.sacolaContent .valores #valorSubtotal,#valorFrete,#valorTotal{
+    text-align: center;
+}
+.sacolaGrid .botoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5% 0;
+}
+.sacolaGrid .botoes button{
+    height: 40%;
+    width: 20%;
+}

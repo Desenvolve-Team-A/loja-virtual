@@ -1,0 +1,111 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50vh 70vh 8vh 80vh 8vh 100vh;
+}
+#content1 button{
+    position: relative;
+    bottom: 7rem;
+    left: 5rem;
+}
+.card{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+.card a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.card #oferta2{
+    justify-content: center;
+}
+.card #oferta3{
+    justify-content: right;
+}
+.card a .cardContent{ 
+    height: calc(100% - 5rem);
+    width: calc(100% - 2rem);
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+}
+.card a .cardContent .imgCard{
+    height: 70%;
+}
+.card a .cardContent .descCard{
+    padding: 1rem;
+}
+.card a .cardContent .btnCard{
+    padding: 1rem;
+    display: flex;
+    justify-content: right;
+}
+#content2Button{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}#content2Button button{
+    height: 100%;
+}
+#content3 a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}#content3 a img{
+    height: calc(100% - 5rem);
+}
+#content4Title{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content4{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+#content4 a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#content4 a .cardPopular{
+    height: calc(100% - 5rem);
+    width: calc(100% - 5rem);
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+}
+#content4 #popular2{
+    justify-content: center;
+}
+#content4 #popular3{
+    justify-content: right;
+}
+#content4 a .cardPopular .imgCardPopular{
+    height: 70%;
+}
+#content4 a .cardPopular .descCardPopular{
+    padding: 1rem;
+}
+#content4 a .cardPopular .btnCardPopular{
+    padding: 1rem;
+    display: flex;
+    justify-content: right;
+}
+
+
+

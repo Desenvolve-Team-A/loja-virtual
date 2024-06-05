@@ -1,0 +1,74 @@
+img{
+    width: 70%;
+    height: 100%;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 80vh 100vh;
+}
+.container div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .infoProduto{
+    position: sticky;
+    top: 13vh;
+}
+.infoProduto .contentInfo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.infoProduto .contentInfo h2{
+    margin-top: 5%;
+    height: 10%;
+    align-content: center;
+}
+.infoProduto .contentInfo h3{
+    margin-top: 5%;
+    height: 8%;
+    align-content: center;
+}
+.infoProduto .contentInfo p{
+    margin-top: 20%;
+    height: 10%;
+    align-content: center;
+}
+.infoProduto .contentInfo .tamanhos{
+    margin-bottom: 10%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.infoProduto .contentInfo #btnComprar{
+    margin-bottom: 10%;
+    height: 10%;
+}
+.container .descProduto{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.descProduto h3,#nome,#desc{
+    margin: 5%;
+}
+.descProduto .caracteristicas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+}   
+.descProduto .caracteristicas p{
+    text-align: left;
+    align-content: center;
+    width: 90%;
+    height: 100%;
+    padding-left: 10%;
+}
