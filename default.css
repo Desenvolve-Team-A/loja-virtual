@@ -40,6 +40,15 @@ h2{
     font-size: 25px;
     font-weight: 400;
 }
+.menuTitle h3{
+    font-size: 12px;
+}
+.menuContent a{
+    font-size: 11px;
+}
+.menuContent p{
+    font-size: 11px;
+}
 main p{
     color: var(--color-white);
 }
@@ -206,7 +215,12 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1;
-}header a{
+}
+header img{
+    height: 54%;
+    width: 9%;
+}
+header a{
     align-content: center;
     margin: 0 2rem 0;
     transition-duration: 0.4s;
