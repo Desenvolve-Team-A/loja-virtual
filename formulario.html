@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="formulario.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formulario.css">
     <title>Finalizar compra</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .richard p,
+        .richard button {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
     <div id="conteiner">
         <form id="form-dados-pessoais">
@@ -28,7 +42,7 @@
             <label for="telefone" id="texto">Telefone</label>
             <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 90000-0000" required>
             <span class="error">Campo obrigatório.</span>
-            
+
         </form>
         <form id="form-entrega">
             <div id="span">
@@ -57,27 +71,48 @@
                 <span class="titulo">Pagamento</span>
             </div>
             <div id="pagamento">
-                <input type="radio" id="pix" name="forma-pagamento">
+                <input type="radio" id="pix" name="forma-pagamento" value="pix" onclick="radioSelecionado(this)">
                 <label id="pagamento-pix" for="pix">PIX</label><br>
                 <span class="error">Campo obrigatório.</span>
-            </div>
-
-            <div id="pagamento"> 
-                <input type="radio" id="cartao" name="forma-pagamento">
-                <label id="pagamento-cartao" for="cartao">Cartão</label><br>
-                <span class="error">Campo obrigatório.</span>
+                <div class="hidden pagamento">
+                    <p>QR CODE</p>
+                    <img src="/imagensLoja/qrcode.png" alt="">
+                </div>
             </div>
 
             <div id="pagamento">
-                <input type="radio" id="boleto" name="forma-pagamento">
+                <input type="radio" id="cartao" name="forma-pagamento" value="cartao" onclick="radioSelecionado(this)">
+                <label id="pagamento-cartao" for="cartao">Cartão</label><br>
+                <span class="error">Campo obrigatório.</span>
+                <div class="hidden pagamento">
+                    <br>
+                    <label for="numeroCartao">Número do Cartão:</label>
+                    <input type="text" id="numeroCartao" name="numeroCartao"><br><br>
+                    <label for="codigoSeguranca">Código de Segurança:</label>
+                    <input type="text" id="codigoSeguranca" name="codigoSeguranca">
+                    <label for="codigoSeguranca">Código de Segurança:</label>
+                    <input type="text" id="codigoSeguranca" name="codigoSeguranca"><br><br>
+                </div>
+            </div>
+
+            <div id="pagamento">
+                <input type="radio" id="boleto" name="forma-pagamento" value="boleto" onclick="radioSelecionado(this)">
                 <label id="pagamento-boleto" for="boleto">Boleto</label><br>
                 <span class="error">Campo obrigatório.</span>
+                <div class="hidden pagamento">
+                    <p id="boleto">Boleto</p>
+                    <div class="richard">
+                        <p>26090712830922012628912100000004197460000010000</p>
+                        <button onclick="">Copiar</button>
+                    </div>
+                </div>
             </div>
             <div id="botao">
                 <input class="botao" type="submit" value="Finalizar Compra">
             </div>
         </form>
     </div>
-    
+
 </body>
+
 </html>
