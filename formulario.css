@@ -1,23 +1,23 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
 #conteiner {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0 60px;
+    justify-items: center;
+    margin: 3%;
     grid-template-columns: repeat(3, 1fr);
 }
 #form-dados-pessoais, #form-entrega, #form-pagamento{
     border: 1px solid transparent;
     border-radius: 3px;
-    width: 25vw;
+    width: 80%;
     padding: 10px;
-    height: 60vh;
-    margin: 10vh 0px;
+    height: 80%;
+    margin: 10vh 0;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.736);
+    justify-items: center;
+    box-shadow: 0px 12px 18px 4px rgba(10, 13, 34, 0.281);
+    background-color: whitesmoke;
 }
 #span {
     display: flex;
@@ -28,13 +28,13 @@
 }
 .imagem{
     margin: 5px 0;
-    width: 23px;
+    width: 25px;
 }
 .titulo {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#nome, #telefone {
+#nome {
     padding: 5px;
     margin: 5px 0;
     width: 20vw;
@@ -45,8 +45,8 @@
     background-position: right top;
     background-repeat: no-repeat; 
 }
-#nome:focus, #telefone:focus{
-    box-shadow: 1px 2px 3px rgba(159, 159, 159, 0.736);
+#nome:focus {
+    box-shadow: 0px 4px 5px 4px rgba(10, 13, 34, 0.127);
 }
 #nome::placeholder, #telefone::placeholder {
     color: #b3b3b3;
@@ -63,13 +63,18 @@
     margin-left: 5px;
 }
 .botao {
-    border: 1px solid rgba(128, 128, 128, 0.737);
-    border-radius: 5px;
-    padding: 7px 10px;
-    background-color: #d81cd8;
-    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.736);
-    transition-duration: 0.4s;
+    padding: 2%;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    transition-duration: 0.2s;
     cursor: pointer;
+}
+.botao:hover, .codBoleto button:hover {
+    background-color: var(--color-white);
+    color: var(--color-yellow);
+    box-shadow: 0px 4px 5px 4px rgba(10, 13, 34, 0.127);
 }
 #botao {
     margin-top: 35px;
@@ -81,6 +86,75 @@
     color: red;
     display: none;
 }
-#boleto, input [type="radio"] {
-    color: aqua;
+.hidden {
+    display: none;
+}
+#numeroBoleto{
+    overflow-x: scroll;
+    color: var(--color-black);
+    padding: 5%;
+}
+#numeroBoleto::-webkit-scrollbar {
+    background: transparent;
+    height: 6px;
+}
+#numeroBoleto::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+.codBoleto button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: var(--color-lightYellow);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 5px 4px rgba(10, 13, 34, 0.127);
+}
+
+#boleto1, #code p {
+    color: black;
+    font-size: 14px;
+    margin: 5px;
+    font-weight: 600;
+}
+#infoCartao {
+    padding: 0 10px;
+}
+#infoCartao2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}   
+#numeroCartao{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 20vw;
+    padding: 4px;
+    margin-bottom: 3px;
+}
+#codigoSeguranca, #validadeCartao {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 7vw;
+    padding: 4px;
+}
+#numCartao, #codigoCartao, #dataValidade {
+    font-size: 12px;
+}
+#qrcode {
+    width: 30%;
+}
+#code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#valorTotalCompraFinal {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    margin-top: 10%;
+    background-color: var(--color-grey);
+    border-radius: 5px;
+
 }
