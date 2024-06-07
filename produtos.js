@@ -14,7 +14,9 @@ let camisetas = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Verde"
+        "cor": "Preta",
+        "quantidade": 1,
+        "url": "imagensLoja/camisas/camisa1.png"
     },
     {
         "id": 2,
@@ -31,7 +33,9 @@ let camisetas = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Marrom"
+        "cor": "Marrom",
+        "quantidade": 1,
+        "url": "imagensLoja/camisas/camisa2.png"
     },
     {
         "id": 3,
@@ -48,7 +52,9 @@ let camisetas = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Preta"
+        "cor": "Preta",
+        "quantidade": 1,
+        "url": "imagensLoja/camisas/camisa3.png"
     },
     {
         "id": 4,
@@ -65,7 +71,9 @@ let camisetas = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Roxa"
+        "cor": "Roxa",
+        "quantidade": 1,
+        "url": "imagensLoja/camisas/camisa4.png"
     },
     {
         "id": 5,
@@ -82,7 +90,9 @@ let camisetas = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Marrom"
+        "cor": "Marrom",
+        "quantidade": 1,
+        "url": "imagensLoja/camisas/camisa5.png"
     },
     {
         "id": 6,
@@ -99,7 +109,9 @@ let camisetas = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Bege"
+        "cor": "Bege",
+        "quantidade": 1,
+        "url": "imagensLoja/camisas/camisa6.png"
     }
 ]
 
@@ -119,7 +131,9 @@ let calcas = [
         "composicao": "100% algodão",
         "estampa": "NA",
         "tecido": "Algodão",
-        "cor": "Cinza"
+        "cor": "Cinza",
+        "quantidade": 1,
+        "url": "imagensLoja/calca/calca1.png"
     },
     {
         "id": 2,
@@ -136,7 +150,9 @@ let calcas = [
         "composicao": "100% algodão",
         "estampa": "NA",
         "tecido": "Algodão",
-        "cor": "Bege"
+        "cor": "Bege",
+        "quantidade": 1,
+        "url": "imagensLoja/calca/calca2.png"
     },
     {
         "id": 3,
@@ -153,7 +169,9 @@ let calcas = [
         "composicao": "100% algodão",
         "estampa": "NA",
         "tecido": "Algodão",
-        "cor": "Preta"
+        "cor": "Preta",
+        "quantidade": 1,
+        "url": "imagensLoja/calca/calca3.png"
     },
     {
         "id": 4,
@@ -170,7 +188,9 @@ let calcas = [
         "composicao": "100% algodão",
         "estampa": "NA",
         "tecido": "Algodão",
-        "cor": "Off White"
+        "cor": "Off White",
+        "quantidade": 1,
+        "url": "imagensLoja/calca/calca4.png"
     },
     {
         "id": 5,
@@ -187,7 +207,9 @@ let calcas = [
         "composicao": "100% algodão",
         "estampa": "NA",
         "tecido": "Algodão",
-        "cor": "Bege"
+        "cor": "Bege",
+        "quantidade": 1,
+        "url": "imagensLoja/calca/calca5.png"
     },
     {
         "id": 6,
@@ -204,7 +226,9 @@ let calcas = [
         "composicao": "100% algodão",
         "estampa": "NA",
         "tecido": "Algodão",
-        "cor": "Preta"
+        "cor": "Preta",
+        "quantidade": 1,
+        "url": "imagensLoja/calca/calca6.png"
     }
 ]
 
@@ -224,7 +248,9 @@ let moletons = [
         "composicao": "100% algodão",
         "estampa": "NA",
         "tecido": "Algodão",
-        "cor": "Bege"
+        "cor": "Bege",
+        "quantidade": 1,
+        "url": "imagensLoja/moletom/moletom1.png"
     },
     {
         "id": 2,
@@ -241,7 +267,9 @@ let moletons = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Marrom"
+        "cor": "Marrom",
+        "quantidade": 1,
+        "url": "imagensLoja/moletom/moletom2.png"
     },
     {
         "id": 3,
@@ -258,7 +286,9 @@ let moletons = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Preta"
+        "cor": "Preta",
+        "quantidade": 1,
+        "url": "imagensLoja/moletom/moletom3.png"
     },
     {
         "id": 4,
@@ -275,7 +305,9 @@ let moletons = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Rosa"
+        "cor": "Rosa",
+        "quantidade": 1,
+        "url": "imagensLoja/moletom/moletom4.png"
     },
     {
         "id": 5,
@@ -292,7 +324,9 @@ let moletons = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Branca"
+        "cor": "Branca",
+        "quantidade": 1,
+        "url": "imagensLoja/moletom/moletom5.png"
     },
     {
         "id": 6,
@@ -309,7 +343,9 @@ let moletons = [
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
-        "cor": "Roxa"
+        "cor": "Roxa",
+        "quantidade": 1,
+        "url": "imagensLoja/moletom/moletom6.png"
     }
 ]
 
