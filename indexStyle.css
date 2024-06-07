@@ -1,17 +1,69 @@
 img{
-    width: 100%;
+    width: 55%;
     height: 100%;
+}
+
+#content1{
+    background-color: var(--color-black);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#content1 a #bannersubTitle{
+    color: var(--color-blue);
+    width: 50%;
+    position: relative;
+    bottom: 15rem;
+    left: 5rem;
+    font-size: 40px;
+    font-family: Archivo;
+}
+#content1 a #bannerTitle{
+    width: 50%;
+    color: var(--color-white);
+    position: relative;
+    bottom: 15rem;
+    left: 5rem;
+    font-size: 90px;
+    font-family: Rubik;
+}
+#content1 a #floco1{
+    position: relative;
+    bottom: 27rem;
+    left: 53rem;
+}
+#content1 a #floco2{
+    position: relative;
+    bottom: 40rem;
+    left: 70rem;
+}
+#content1 a #floco3{
+    position: relative;
+    bottom: 35rem;
+    left: 30rem;
+}
+#content1 a #floco4{
+    position: relative;
+    bottom: 21rem;
+    left: 20rem;
+}
+#content1 a #floco5{
+    position: relative;
+    bottom: 23rem;
+    left: -28rem;
+}
+
+
+#content1 a #img1{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    left: 60rem;
 }
 
 .container {
     width: 100%;
     display: grid;
     grid-template-rows: 50vh 70vh 8vh 80vh 8vh 100vh;
-}
-#content1 button{
-    position: relative;
-    bottom: 7rem;
-    left: 5rem;
 }
 .card{
     height: 100%;
@@ -57,60 +109,140 @@ img{
     align-items: center;
    justify-content: center;
 }#content2Button button{
-    height: 100%;
+    height: 90%;
+    width: 20%;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: var(--color-lightYellow);
+    color: var(--color-black);
+    transition-duration: 0.2s;
+}
+#content2Button button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+    cursor: pointer;
+    scale: 1.1;
+}
+#content3{
+    align-content: center;
 }
 #content3 a{
-    height: 100%;
+    height: 80%;
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: var(--color-blue);
 }#content3 a img{
-    height: calc(100% - 5rem);
+    width: 25%;
+    height: 90%;
+    position: relative;
+}
+#content3 a #titulo{
+    top: 5rem;
+    left: 22rem;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family: Rubik;
+    z-index: 1;
+}
+#content3 a #skate1{
+    left: -30rem;
+}
+#content3 a #skate2{
+    left: -20rem;
+    bottom: 5rem;
+}
+#content3 a #skate3{
+    left: -12rem;
 }
 #content4Title{
     width: 90%;
+    height: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 0.4rem;
 }
-#content4{
+.cardPopular{
     height: 100%;
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 33% 34% 33%;
 }
-#content4 a{
+.cardPopular img{
+    height: 100%;
+    width: 95%;
+}
+.cardPopular a{
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
 }
-#content4 a .cardPopular{
-    height: calc(100% - 5rem);
-    width: calc(100% - 5rem);
-    background-color: beige;
+.cardPopular a .cardContent{ 
+    height: calc(100% - 4rem);
+    width: calc(100% - 4rem);
+    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
+    border-radius: 0.7rem;
+    box-shadow: 0px 12px 18px 4px rgba(10, 13, 34, 0.281);
+    transition-duration: 0.4s;
 }
-#content4 #popular2{
+.cardPopular a .cardContent:hover{
+    scale: 1.05;
+}
+.cardPopular a .cardContent .imgCard{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.cardPopular a .cardContent .descCard{
+    height: 7%; 
+    padding: 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue);
+}
+.cardPopular a .cardContent .descCard p{
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: bold;
+}
+.cardPopular a .cardContent .btnCard{
+    height: 13%;
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: var(--color-blue);
+    border-radius: 0 0 0.4rem 0.7rem;
+}
+.cardPopular a .cardContent .btnCard p{
+    text-align: center;
+    align-content: center;
+    height: 90%;
+    padding: 0.5rem 0 0.5rem;
+    font-size: 35px;
+}
+.cardPopular a .cardContent .btnCard p span{
+    font-weight: normal;
+    text-decoration: line-through;
+    color: var(--color-blue);
+}
+.cardPopular .card2{
     justify-content: center;
 }
-#content4 #popular3{
+.cardPopular .card3{
     justify-content: right;
 }
-#content4 a .cardPopular .imgCardPopular{
-    height: 70%;
-}
-#content4 a .cardPopular .descCardPopular{
-    padding: 1rem;
-}
-#content4 a .cardPopular .btnCardPopular{
-    padding: 1rem;
-    display: flex;
-    justify-content: right;
-}
-
 
 
