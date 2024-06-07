@@ -133,29 +133,36 @@ img{
     align-items: center;
     background-color: var(--color-blue);
 }#content3 a img{
-    width: 25%;
-    height: 90%;
+    width: 30%;
+    height: 85%;
     position: relative;
 }
 #content3 a #titulo{
-    top: 5rem;
-    left: 22rem;
     width: 100%;
     position: relative;
+    transform: translate(68%,50%);
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Rubik;
     z-index: 1;
 }
 #content3 a #skate1{
-    left: -30rem;
+    right: 23rem;
+    top: 2rem;
 }
 #content3 a #skate2{
-    left: -20rem;
-    bottom: 5rem;
+    right: 15rem;
+    bottom: 4rem;
 }
 #content3 a #skate3{
-    left: -12rem;
+    right: 8rem;
+    top: 2rem;
+}
+#content3 a #logoBranca{
+    width: 7%;
+    height: 20%;
+    right: 2rem;
+    top: 8rem;
 }
 #content4Title{
     width: 90%;
