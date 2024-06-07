@@ -16,7 +16,8 @@ let camisetas = [
         "tecido": "Algodão",
         "cor": "Preta",
         "quantidade": 1,
-        "url": "imagensLoja/camisas/camisa1.png"
+        "url": "imagensLoja/camisas/camisa1.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 2,
@@ -35,7 +36,8 @@ let camisetas = [
         "tecido": "Algodão",
         "cor": "Marrom",
         "quantidade": 1,
-        "url": "imagensLoja/camisas/camisa2.png"
+        "url": "imagensLoja/camisas/camisa2.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 3,
@@ -54,7 +56,8 @@ let camisetas = [
         "tecido": "Algodão",
         "cor": "Preta",
         "quantidade": 1,
-        "url": "imagensLoja/camisas/camisa3.png"
+        "url": "imagensLoja/camisas/camisa3.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 4,
@@ -73,12 +76,13 @@ let camisetas = [
         "tecido": "Algodão",
         "cor": "Roxa",
         "quantidade": 1,
-        "url": "imagensLoja/camisas/camisa4.png"
+        "url": "imagensLoja/camisas/camisa4.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 5,
-        "titulo": "Camiseta Regular Estampada – Lighter Marrom",
-        "descricao": "Atualize seu estilo urbano com nossa camisa Lighter. Com uma interpretação contemporânea das clássicas camisas basicas, esta camisa exala sofisticação urbana. Feita com tecido de algodão premium, oferece um caimento relaxado para conforto o dia todo. Os detalhes sofisticados adicionam interesse visual, tornando-a uma peça versátil para qualquer ocasião casual. Vista com calças de alfaiataria e mocassins para um visual streetwear refinado que com certeza impressionará.",
+        "titulo": "Camiseta Regular Estampada – Flower Vermelha",
+        "descricao": "Atualize seu estilo urbano com nossa camisa Flower. Com uma interpretação contemporânea das clássicas camisas estampadas, esta camisa exala sofisticação urbana. Feita com tecido de algodão premium, oferece um caimento relaxado para conforto o dia todo. Os detalhes sofisticados adicionam interesse visual, tornando-a uma peça versátil para qualquer ocasião casual. ",
         "tamanho": [
             "P",
             "M",
@@ -92,7 +96,8 @@ let camisetas = [
         "tecido": "Algodão",
         "cor": "Marrom",
         "quantidade": 1,
-        "url": "imagensLoja/camisas/camisa5.png"
+        "url": "imagensLoja/camisas/camisa5.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 6,
@@ -111,7 +116,8 @@ let camisetas = [
         "tecido": "Algodão",
         "cor": "Bege",
         "quantidade": 1,
-        "url": "imagensLoja/camisas/camisa6.png"
+        "url": "imagensLoja/camisas/camisa6.png",
+        "tamanhoSelecionado": ""
     }
 ]
 
@@ -133,7 +139,8 @@ let calcas = [
         "tecido": "Algodão",
         "cor": "Cinza",
         "quantidade": 1,
-        "url": "imagensLoja/calca/calca1.png"
+        "url": "imagensLoja/calca/calca1.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 2,
@@ -152,7 +159,8 @@ let calcas = [
         "tecido": "Algodão",
         "cor": "Bege",
         "quantidade": 1,
-        "url": "imagensLoja/calca/calca2.png"
+        "url": "imagensLoja/calca/calca2.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 3,
@@ -171,7 +179,8 @@ let calcas = [
         "tecido": "Algodão",
         "cor": "Preta",
         "quantidade": 1,
-        "url": "imagensLoja/calca/calca3.png"
+        "url": "imagensLoja/calca/calca3.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 4,
@@ -190,7 +199,8 @@ let calcas = [
         "tecido": "Algodão",
         "cor": "Off White",
         "quantidade": 1,
-        "url": "imagensLoja/calca/calca4.png"
+        "url": "imagensLoja/calca/calca4.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 5,
@@ -209,7 +219,8 @@ let calcas = [
         "tecido": "Algodão",
         "cor": "Bege",
         "quantidade": 1,
-        "url": "imagensLoja/calca/calca5.png"
+        "url": "imagensLoja/calca/calca5.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 6,
@@ -228,7 +239,8 @@ let calcas = [
         "tecido": "Algodão",
         "cor": "Preta",
         "quantidade": 1,
-        "url": "imagensLoja/calca/calca6.png"
+        "url": "imagensLoja/calca/calca6.png",
+        "tamanhoSelecionado": ""
     }
 ]
 
@@ -250,7 +262,8 @@ let moletons = [
         "tecido": "Algodão",
         "cor": "Bege",
         "quantidade": 1,
-        "url": "imagensLoja/moletom/moletom1.png"
+        "url": "imagensLoja/moletom/moletom1.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 2,
@@ -269,7 +282,8 @@ let moletons = [
         "tecido": "Algodão",
         "cor": "Marrom",
         "quantidade": 1,
-        "url": "imagensLoja/moletom/moletom2.png"
+        "url": "imagensLoja/moletom/moletom2.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 3,
@@ -281,14 +295,15 @@ let moletons = [
             "G",
             "GG"
         ],
-        "preco": 22.99,
+        "preco": 229.99,
         "categoria": 1,
         "composicao": "100% algodão",
         "estampa": "Lisa",
         "tecido": "Algodão",
         "cor": "Preta",
         "quantidade": 1,
-        "url": "imagensLoja/moletom/moletom3.png"
+        "url": "imagensLoja/moletom/moletom3.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 4,
@@ -307,7 +322,8 @@ let moletons = [
         "tecido": "Algodão",
         "cor": "Rosa",
         "quantidade": 1,
-        "url": "imagensLoja/moletom/moletom4.png"
+        "url": "imagensLoja/moletom/moletom4.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 5,
@@ -326,7 +342,8 @@ let moletons = [
         "tecido": "Algodão",
         "cor": "Branca",
         "quantidade": 1,
-        "url": "imagensLoja/moletom/moletom5.png"
+        "url": "imagensLoja/moletom/moletom5.png",
+        "tamanhoSelecionado": ""
     },
     {
         "id": 6,
@@ -345,7 +362,8 @@ let moletons = [
         "tecido": "Algodão",
         "cor": "Roxa",
         "quantidade": 1,
-        "url": "imagensLoja/moletom/moletom6.png"
+        "url": "imagensLoja/moletom/moletom6.png",
+        "tamanhoSelecionado": ""
     }
 ]
 

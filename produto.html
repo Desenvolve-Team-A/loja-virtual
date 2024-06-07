@@ -27,7 +27,7 @@
                 </g>
             </svg>
         </a>
-        <img src="imagensLoja/Logos/LogoEscrita.png" alt="">
+        <img src="imagensLoja/Logos/LogoEscrita.png" alt="" onclick="navegarParaHome()">
         <a onclick="toggleSacola()">
             <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -66,64 +66,9 @@
     <aside id="sacola">
         <div class="sacolaContent">
             <h2>Sacola</h2>
-            <div class="listaSacola">
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
+            <div class="listaSacola" id="sacolaDeProdutos">
             </div>
-            <a href="#">
+            <a href="javascript:navegarParaFormulario()">
                 <p>Finalizar Compra</p>
             </a>
         </div>
@@ -140,7 +85,8 @@
                     </div>
                     <p class="valor" id="precoProduto">R$125,99</p>
                     <p class="tamanhoTile">Tamanho</p>
-                    <div class="tamanhos"><button>P</button><button>M</button><button>G</button><button>GG</button>
+                    <div class="tamanhos" id="botoesDeTamanhoProdutoSelecionado">
+
                     </div>
                     <button id="btnComprar" onclick="navegarParaCompra()">Comprar</button>
                 </div>
@@ -239,6 +185,7 @@
         </div>
     </footer>
     <script>
+        inicializaSacola();
         carregarProduto();
     </script>
 </body>

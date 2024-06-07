@@ -1,8 +1,7 @@
 // usar somente quando necessário limpar a memoria, para utilizar a aplicação normalmente, deixar comentado a linha abaixo;
 //localStorage.clear(); // responsavel por apagar a memoria local do navegador assim que a aplicação é iniciada 
 class Produto {
-    tamanhoSelecionado;
-    constructor({ id, titulo, descricao, tamanho, preco, categoria, composicao, estampa, tecido, cor, quantidade, url }) {
+    constructor({ id, titulo, descricao, tamanho, preco, categoria, composicao, estampa, tecido, cor, quantidade, url, tamanhoSelecionado }) {
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
@@ -15,25 +14,29 @@ class Produto {
         this.cor = cor;
         this.quantidade = quantidade;
         this.url = url;
-        this.tamanhoSelecionado;
+        this.tamanhoSelecionado = tamanhoSelecionado;
     }
     toJson() {
         return JSON.stringify(this);
     }
 
     static fromJson(json) {
-        const { id, titulo, descricao, tamanho, preco, categoria, composicao, estampa, tecido, cor, quantidade, url } = JSON.parse(json);
-        return new Produto({ id, titulo, descricao, tamanho, preco, categoria, composicao, estampa, tecido, cor, quantidade, url });
+        const { id, titulo, descricao, tamanho, preco, categoria, composicao, estampa, tecido, cor, quantidade, url, tamanhoSelecionado } = JSON.parse(json);
+        return new Produto({ id, titulo, descricao, tamanho, preco, categoria, composicao, estampa, tecido, cor, quantidade, url, tamanhoSelecionado });
     }
 }
 
-let sacolaUsuario;
+let sacolaUsuario = [];
 
-if (localStorage.getItem("sacolaUsuario")) {
-    let sacolaUsuarioString = localStorage.getItem("sacolaUsuario");
-    sacolaUsuario = JSON.parse(sacolaUsuarioString).map(produto => new Produto(produto));
-} else {
-    sacolaUsuario = [];
+function inicializaSacola() {
+    if (localStorage.getItem("sacolaUsuario")) {
+        let sacolaUsuarioString = localStorage.getItem("sacolaUsuario");
+        let sacolaUsuarioJSON = JSON.parse(sacolaUsuarioString);
+        for (let index = 0; index < sacolaUsuarioJSON.length; index++) {
+            let produtoNaSacola = Produto.fromJson(sacolaUsuarioJSON[index]);
+            sacolaUsuario.push(produtoNaSacola);
+        }
+    }
 }
 
 // Funcoes de navegação
@@ -83,13 +86,19 @@ function navegarParaProduto(idProduto, categoria) {
 
 function navegarParaCompra() {
     adicionarProdutoNaSacola();
-    // window.location.href = "compra.html";
-    // verificar o pq não renderiza a sacola quando navega;
-
+    window.location.href = "compra.html";
 }
 
 function navegarParaFormulario() {
     window.location.href = "formulario.html";
+}
+
+function navegarParaCamisas() {
+    window.location.href = "camisa.html";
+}
+
+function navegarParaMoletons() {
+    window.location.href = "moletom.html";
 }
 
 
@@ -125,6 +134,90 @@ function carregarProduto() {
     let imagemProduto = document.getElementById("imagemProdutoSelecionado");
     imagemProduto.src = produto.url;
 
+    let botoesDeTamanho = document.getElementById("botoesDeTamanhoProdutoSelecionado");
+    for (let index = 0; index < produto.tamanho.length; index++) {
+        let botaotamanho = document.createElement("button");
+        botaotamanho.textContent = produto.tamanho[index];
+        botaotamanho.id = `botaoTamanhoId${index + 1}`;
+        if (produto.tamanho[index] == "P") {
+            botaotamanho.onclick = determinaTamanhoSelecionadoP;
+        } else if (produto.tamanho[index] == "M") {
+            botaotamanho.onclick = determinaTamanhoSelecionadoM;
+        } else if (produto.tamanho[index] == "G") {
+            botaotamanho.onclick = determinaTamanhoSelecionadoG;
+        } else if (produto.tamanho[index] == "GG") {
+            botaotamanho.onclick = determinaTamanhoSelecionadoGG;
+        } else if (produto.tamanho[index] == "38") {
+            botaotamanho.onclick = determinaTamanhoSelecionado38;
+        } else if (produto.tamanho[index] == "40") {
+            botaotamanho.onclick = determinaTamanhoSelecionado40;
+        } else if (produto.tamanho[index] == "42") {
+            botaotamanho.onclick = determinaTamanhoSelecionado42;
+        } else if (produto.tamanho[index] == "44") {
+            botaotamanho.onclick = determinaTamanhoSelecionado44;
+        }
+
+        botoesDeTamanho.appendChild(botaotamanho);
+    }
+
+}
+
+function determinaTamanhoSelecionadoP() {
+    let produto = retornaProdutoSelecionadoComoObjetoProduto();
+    // alterar estilo do botao para deixar com hover ativo após clicar
+    produto.tamanhoSelecionado = "P";
+    let produtoJSON = produto.toJson();
+    localStorage.setItem("produtoSelecionadoString", produtoJSON);
+}
+
+function determinaTamanhoSelecionadoM() {
+    let produto = retornaProdutoSelecionadoComoObjetoProduto();
+    // alterar estilo do botao para deixar com hover ativo após clicar
+    produto.tamanhoSelecionado = "M";
+    let produtoJSON = produto.toJson();
+    localStorage.setItem("produtoSelecionadoString", produtoJSON);
+}
+function determinaTamanhoSelecionadoG() {
+    let produto = retornaProdutoSelecionadoComoObjetoProduto();
+    // alterar estilo do botao para deixar com hover ativo após clicar
+    produto.tamanhoSelecionado = "G";
+    let produtoJSON = produto.toJson();
+    localStorage.setItem("produtoSelecionadoString", produtoJSON);
+}
+function determinaTamanhoSelecionadoGG() {
+    let produto = retornaProdutoSelecionadoComoObjetoProduto();
+    // alterar estilo do botao para deixar com hover ativo após clicar
+    produto.tamanhoSelecionado = "GG";
+    let produtoJSON = produto.toJson();
+    localStorage.setItem("produtoSelecionadoString", produtoJSON);
+}
+function determinaTamanhoSelecionado38() {
+    let produto = retornaProdutoSelecionadoComoObjetoProduto();
+    // alterar estilo do botao para deixar com hover ativo após clicar
+    produto.tamanhoSelecionado = "38";
+    let produtoJSON = produto.toJson();
+    localStorage.setItem("produtoSelecionadoString", produtoJSON);
+}
+function determinaTamanhoSelecionado40() {
+    let produto = retornaProdutoSelecionadoComoObjetoProduto();
+    // alterar estilo do botao para deixar com hover ativo após clicar
+    produto.tamanhoSelecionado = "40";
+    let produtoJSON = produto.toJson();
+    localStorage.setItem("produtoSelecionadoString", produtoJSON);
+}
+function determinaTamanhoSelecionado42() {
+    let produto = retornaProdutoSelecionadoComoObjetoProduto();
+    // alterar estilo do botao para deixar com hover ativo após clicar
+    produto.tamanhoSelecionado = "42";
+    let produtoJSON = produto.toJson();
+    localStorage.setItem("produtoSelecionadoString", produtoJSON);
+}
+function determinaTamanhoSelecionado44() {
+    let produto = retornaProdutoSelecionadoComoObjetoProduto();
+    // alterar estilo do botao para deixar com hover ativo após clicar
+    produto.tamanhoSelecionado = "44";
+    let produtoJSON = produto.toJson();
+    localStorage.setItem("produtoSelecionadoString", produtoJSON);
 }
 
 function reduzUmaUnidadeNoProduto() {
@@ -162,9 +255,6 @@ function aumentaUmaUnidadeNoProduto() {
 
 function renderizaSacola() {
     let telaSacola = document.getElementById("sacolaDeProdutos");
-    if (telaSacola != null) {
-        telaSacola.innerHTML = "";
-    }
 
     for (let index = 0; index < sacolaUsuario.length; index++) {
         if (sacolaUsuario[index].titulo == undefined) {
@@ -187,17 +277,11 @@ function renderizaSacola() {
         nomeProduto.textContent = sacolaUsuario[index].titulo;
 
         let botaoLixeira = document.createElement("button");
-        botaoLixeira.onclick = excluirItemDaSacola();
+        botaoLixeira.onclick = excluirItemDaSacola;
 
-        let imagemLixeiraSvg = document.createElement("svg");
-        imagemLixeiraSvg.xmlns = "http://www.w3.org/2000/svg";
-        imagemLixeiraSvg.height = "25px";
-        imagemLixeiraSvg.viewBox = "0 -960 960 960";
-        imagemLixeiraSvg.width = "25px";
-        imagemLixeiraSvg.fill = "#22100c";
-
-        let pathLixeira = document.createElement("path");
-        pathLixeira.d = "M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z";
+        let imagemLixeiraSacola = document.createElement("img");
+        imagemLixeiraSacola.id = "iconeLixeiraDentroDaSacola"
+        imagemLixeiraSacola.src = "imagensLoja/lixeiraSacola.png";
 
         let tamanhoProduto = document.createElement("p");
         tamanhoProduto.id = "tamanhoProduto";
@@ -207,8 +291,7 @@ function renderizaSacola() {
         valorProduto.id = "valorProduto";
         valorProduto.textContent = sacolaUsuario[index].preco;
 
-        imagemLixeiraSvg.appendChild(pathLixeira);
-        botaoLixeira.append(imagemLixeiraSvg);
+        botaoLixeira.appendChild(imagemLixeiraSacola);
         miniaturaSacola.appendChild(imagemDoProduto);
         miniaturaSacola.appendChild(nomeProduto);
         miniaturaSacola.appendChild(botaoLixeira);
@@ -224,11 +307,9 @@ function excluirItemDaSacola() {
 
 function adicionarProdutoNaSacola() {
     let produto = retornaProdutoSelecionadoComoObjetoProduto();
-    if (produto.titulo != undefined) {
-        produto.tamanhoSelecionado = "M";
+    if (produto) {
         sacolaUsuario.push(produto);
         localStorage.removeItem("sacolaUsuario");
-        renderizaSacola();
         for (let index = 0; index < sacolaUsuario.length; index++) {
             sacolaUsuario[index] = sacolaUsuario[index].toJson();
         }

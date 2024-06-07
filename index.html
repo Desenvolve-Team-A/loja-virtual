@@ -69,64 +69,9 @@
     <aside id="sacola">
         <div class="sacolaContent">
             <h2>Sacola</h2>
-            <div class="listaSacola">
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
-                <div class="miniaturaSacola">
-                    <img src="imagensLoja/camisas/camisa2.png" alt="">
-                    <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
-                            fill="#22100c">
-                            <path
-                                d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                        </svg></button>
-                    <p id="tamanhoProduto">GG</p>
-                    <p id="valorProduto">R$129,99</p>
-                </div>
+            <div class="listaSacola" id="sacolaDeProdutos">
             </div>
-            <a href="#">
+            <a href="javascript:navegarParaFormulario()">
                 <p>Finalizar Compra</p>
             </a>
         </div>
@@ -135,7 +80,7 @@
     <main>
         <div class="container" id="container">
             <div id="content1">
-                <a href="#">
+                <a href="javascript:navegarParaMoletons()">
                     <img id="img1" src="imagensLoja/homem capuz.png" alt="">
                     <p id="bannersubTitle">Nova Coleção de</p>
                     <p id="bannerTitle">INVERNO!</p>
@@ -192,7 +137,7 @@
                 </a>
             </div>
             <div class="card">
-                <a href="##" class="card1" id="oferta1">
+                <a href="javascript:navegarParaProduto(1, 'moletons')" class="card1" id="oferta1">
                     <div class="cardContent">
                         <div class="imgCard">
                             <img src="imagensLoja/moletom/moletom1.png" alt="">
@@ -200,41 +145,41 @@
                         <div class="descCard">
                             <p>Moletom 1</p>
                         </div>
-                        <div class="btnCard" onclick="navegarParaProduto(1, 'camisetas')">
-                            <p>RS 124,99</p><button>Ver Mais</button>
+                        <div class="btnCard" onclick="navegarParaProduto(1, 'moletons')">
+                            <p>RS 229,99</p><button>Ver Mais</button>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card2" id="oferta2">
+                <a href="javascript:navegarParaProduto(2, 'moletons')" class="card2" id="oferta2">
                     <div class="cardContent">
                         <div class="imgCard"><img src="imagensLoja/moletom/moletom2.png" alt=""></div>
                         <div class="descCard">
                             <p>Moletom 2</p>
                         </div>
-                        <div class="btnCard">
-                            <p>RS 124,99</p><button>Ver Mais</button>
+                        <div class="btnCard" onclick="navegarParaProduto(2, 'moletons')">
+                            <p>RS 189,99</p><button>Ver Mais</button>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card3" id="oferta3">
+                <a href="javascript:navegarParaProduto(3, 'moletons')" class="card3" id="oferta3">
                     <div class="cardContent">
                         <div class="imgCard"><img src="imagensLoja/moletom/moletom3.png" alt=""></div>
                         <div class="descCard">
                             <p>Moletom 3</p>
                         </div>
-                        <div class="btnCard">
-                            <p>RS 124,99</p><button>Ver Mais</button>
+                        <div class="btnCard" onclick="navegarParaProduto(3, 'moletons')">
+                            <p>RS 229,99</p><button>Ver Mais</button>
                         </div>
                     </div>
                 </a>
             </div>
             <div id="content2Button">
-                <button>Ir para Coleção</button>
+                <button onclick="navegarParaMoletons()">Ir para Coleção</button>
             </div>
 
 
             <div id="content3">
-                <a href="#">
+                <a href="javascript:navegarParaCamisas()">
                     <p id="titulo">Encontre a camisa ideal para todas as situações</p>
                     <img id="skate1" src="imagensLoja/skate3.png" alt="">
                     <img id="skate2" src="imagensLoja/skate2.png" alt="">
@@ -247,38 +192,38 @@
                 <h2>Produtos Populares</h2>
             </div>
             <div class="cardPopular">
-                <a href="##" class="card1" id="popular1">
+                <a href="javascript:navegarParaProduto(4, 'camisetas')" class="card1" id="popular1">
                     <div class="cardContent">
                         <div class="imgCard">
                             <img src="imagensLoja/camisas/camisa4.png" alt="">
                         </div>
                         <div class="descCard">
-                            <p>Camisa 1</p>
+                            <p>Camiseta Oversized Estampada – Lobo Roxa</p>
                         </div>
-                        <div class="btnCard" onclick="navegarParaProduto(1, 'camisetas')">
-                            <p>RS 124,99</p>
+                        <div class="btnCard">
+                            <p>RS 89,99</p>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card2" id="popular2">
+                <a href="javascript:navegarParaProduto(3, 'calcas')" class="card2" id="popular2">
                     <div class="cardContent">
                         <div class="imgCard"><img src="imagensLoja/calca/calca3.png" alt=""></div>
                         <div class="descCard">
-                            <p>Calça 2</p>
+                            <p>Calça de Moletom Elastic – Preta</p>
                         </div>
                         <div class="btnCard">
-                            <p>RS 124,99</p>
+                            <p>RS 169,99</p>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card3" id="popular3">
+                <a href="javascript:navegarParaProduto(4, 'moletons')" class="card3" id="popular3">
                     <div class="cardContent">
                         <div class="imgCard"><img src="imagensLoja/moletom/moletom4.png" alt=""></div>
                         <div class="descCard">
-                            <p>Moletom 3</p>
+                            <p>Moletom Canguru Capuz – Butterfly Preta</p>
                         </div>
                         <div class="btnCard">
-                            <p>RS 124,99</p>
+                            <p>RS 229,99</p>
                         </div>
                     </div>
                 </a>
@@ -354,6 +299,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        inicializaSacola();
+        renderizaSacola();
+    </script>
 </body>
 
 </html>
