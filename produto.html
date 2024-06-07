@@ -10,6 +10,7 @@
         @import "produtoStyle.css";
     </style>
     <script src="default.js"></script>
+    <script src="menuSacola.js" defer></script>
     <link rel="shortcut icon" type="imagex/png" href="imagensLoja/Logos/LogoCircular.png">
 </head>
 
@@ -65,7 +66,7 @@
     <aside id="sacola">
         <div class="sacolaContent">
             <h2>Sacola</h2>
-            <div class="listaSacola">
+            <div class="listaSacola" id="sacolaDeProdutos">
                 <div class="miniaturaSacola">
                     <img src="imagensLoja/camisas/camisa2.png" alt="">
                     <p id="nomeProduto">Camiseta Regular - Butterfly Roxa</p>
@@ -129,11 +130,13 @@
     </aside>
     <main>
         <div class="container" id="container">
-            <div class="imgProduto"><img class="logo" src="imagensLoja/Logos/LogoQuadrada.png" alt=""><img src="imagensLoja/camisas/camisa4.png" alt=""></div>
+            <div class="imgProduto"><img id="imagemProdutoSelecionado" src="imagensLoja/camisas/camisa4.png" alt="">
+            </div>
             <div class="infoProduto">
                 <div class="contentInfo">
-                    <h2>Camiseta Oversized Estampada Annuit - Verde Floresta</h2>
-                    <div class="quantidade"><button>+</button><span id="quantidadeProduto">1</span><button>-</button>
+                    <h2 id="tituloDoProdutoSelecionado">Camiseta Oversized Estampada Annuit - Verde Floresta</h2>
+                    <div class="quantidade"><button onclick="reduzUmaUnidadeNoProduto()">-</button><span
+                            id="quantidadeProduto"></span><button onclick="aumentaUmaUnidadeNoProduto()">+</button>
                     </div>
                     <p class="valor" id="precoProduto">R$125,99</p>
                     <p class="tamanhoTile">Tamanho</p>
