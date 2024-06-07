@@ -85,8 +85,7 @@ function navegarParaProduto(idProduto, categoria) {
 }
 
 function navegarParaCompra() {
-    adicionarProdutoNaSacola();
-    window.location.href = "compra.html";
+    window.location.href = "compra.html"
 }
 
 function navegarParaFormulario() {
@@ -298,6 +297,83 @@ function renderizaSacola() {
         miniaturaSacola.appendChild(tamanhoProduto);
         miniaturaSacola.appendChild(valorProduto);
         telaSacola.appendChild(miniaturaSacola);
+    }
+}
+
+function clickAdicionaProdutoNaSacola() {
+    adicionarProdutoNaSacola();
+    inicializaSacola()
+    renderizaSacola();
+}
+
+function renderizaListaDaTelaSacola() {
+
+    let telaListaDaPageSacola = document.getElementById("listaDaPageSacola");
+
+    for (let index = 0; index < sacolaUsuario.length; index++) {
+        if (sacolaUsuario[index].titulo == undefined) {
+            sacolaUsuario.splice(index, 1);
+        }
+    }
+
+    for (let index = 0; index < sacolaUsuario.length; index++) {
+
+        let miniaturaCard = document.createElement("div");
+        miniaturaCard.className = "miniaturaCard";
+        miniaturaCard.id = `item${index + 1}`;
+
+        let imagemDoProduto = document.createElement("img");
+        imagemDoProduto.src = sacolaUsuario[index].url;
+        imagemDoProduto.alt = "imagemProduto";
+
+        let nomeProduto = document.createElement("p");
+        nomeProduto.id = "nomeProduto";
+        nomeProduto.textContent = sacolaUsuario[index].titulo;
+
+        let botaoLixeira = document.createElement("button");
+        botaoLixeira.className = "excluir";
+        botaoLixeira.id = "iconeLixeiraDentroDaSacola";
+        botaoLixeira.onclick = excluirItemDaSacola;
+
+        let imagemLixeiraSacola = document.createElement("img");
+        imagemLixeiraSacola.id = "iconeLixeiraDentroDaSacola"
+        imagemLixeiraSacola.src = "imagensLoja/lixeiraSacola.png";
+
+        let tamanhoProduto = document.createElement("p");
+        tamanhoProduto.className = "tamanho";
+        tamanhoProduto.id = "tamanhoProduto";
+        tamanhoProduto.textContent = sacolaUsuario[index].tamanhoSelecionado;
+
+        let valorProduto = document.createElement("p");
+        valorProduto.id = "valorProduto";
+        valorProduto.className = "valor";
+        valorProduto.textContent = sacolaUsuario[index].preco;
+
+        let quantidadeproduto = document.createElement("div");
+        quantidadeproduto.className = "quantidade";
+
+        let botaoAdicionarQuantidade = document.createElement("button");
+        botaoAdicionarQuantidade.textContent = "+";
+        botaoAdicionarQuantidade.onclick = aumentaUmaUnidadeNoProduto;
+
+        let botaoRemoverQuantidade = document.createElement("button");
+        botaoRemoverQuantidade.textContent = "-";
+        botaoRemoverQuantidade.onclick = reduzUmaUnidadeNoProduto;
+
+        let visorDeQuantidadeDoProduto = document.createElement("span");
+        visorDeQuantidadeDoProduto.id = "quantidadeProduto";
+
+        quantidadeproduto.appendChild(botaoRemoverQuantidade);
+        quantidadeproduto.appendChild(visorDeQuantidadeDoProduto);
+        quantidadeproduto.appendChild(botaoAdicionarQuantidade);
+
+        miniaturaCard.appendChild(imagemDoProduto);
+        miniaturaCard.appendChild(nomeProduto);
+        miniaturaCard.appendChild(botaoLixeira);
+        miniaturaCard.appendChild(tamanhoProduto);
+        miniaturaCard.appendChild(valorProduto);
+        miniaturaCard.appendChild(quantidadeproduto);
+        telaListaDaPageSacola.appendChild(miniaturaCard);
     }
 }
 

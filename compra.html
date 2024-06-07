@@ -68,80 +68,17 @@
             <h2>Sacola</h2>
             <div class="listaSacola" id="sacolaDeProdutos">
             </div>
-            <a href="javascript:navegarParaFormulario()">
+            <a href="javascript:navegarParaCompra()">
                 <p>Finalizar Compra</p>
             </a>
         </div>
     </aside>
     <main>
         <div class="container" id="container">
-            <h1>Sacola <span>0</span></h1>
+            <h1>Sacola <span></span></h1>
             <div class="sacolaGrid">
                 <div class="sacolaContent">
-                    <div class="lista">
-                        <div class="miniaturaCard">
-                            <img src="imagensLoja/camisas/camisa1.png" alt="">
-                            <p class="nome">Camiseta Regular - Butterfly Marrom</p>
-                            <button class="excluir"><svg xmlns="http://www.w3.org/2000/svg" height="25px"
-                                    viewBox="0 -960 960 960" width="25px" fill="#22100c">
-                                    <path
-                                        d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                                </svg></button>
-                            <p class="tamanho">GG</p>
-                            <p class="valor">R$126,99</p>
-                            <div class="quantidade"><button>+</button> <span> 1 </span> <button>-</button></div>
-                        </div>
-                        <div class="miniaturaCard">
-                            <img src="imagensLoja/camisas/camisa1.png" alt="">
-                            <p class="nome">Camiseta Regular - Butterfly Marrom</p>
-                            <button class="excluir"><svg xmlns="http://www.w3.org/2000/svg" height="25px"
-                                    viewBox="0 -960 960 960" width="25px" fill="#22100c">
-                                    <path
-                                        d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                                </svg></button>
-                            <p class="tamanho">GG</p>
-                            <p class="valor">R$126,99</p>
-                            <div class="quantidade"><button>+</button> <span> 1 </span> <button>-</button></div>
-                        </div>
-                        <div class="miniaturaCard">
-                            <img src="imagensLoja/camisas/camisa1.png" alt="">
-                            <p class="nome">Camiseta Regular - Butterfly Marrom</p>
-                            <button class="excluir"><svg xmlns="http://www.w3.org/2000/svg" height="25px"
-                                    viewBox="0 -960 960 960" width="25px" fill="#22100c">
-                                    <path
-                                        d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                                </svg></button>
-                            <p class="tamanho">GG</p>
-                            <p class="valor">R$126,99</p>
-                            <div class="quantidade"><button>+</button> <span> 1 </span> <button>-</button></div>
-                        </div>
-                        <div class="miniaturaCard">
-                            <img src="imagensLoja/camisas/camisa1.png" alt="">
-                            <p class="nome">Camiseta Regular - Butterfly Marrom</p>
-                            <button class="excluir"><svg xmlns="http://www.w3.org/2000/svg" height="25px"
-                                    viewBox="0 -960 960 960" width="25px" fill="#22100c">
-                                    <path
-                                        d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                                </svg></button>
-                            <p class="tamanho">GG</p>
-                            <p class="valor">R$126,99</p>
-                            <div class="quantidade"><button>+</button> <span> 1 </span> <button>-</button></div>
-                        </div>
-                        <div class="miniaturaCard">
-                            <img src="imagensLoja/camisas/camisa1.png" alt="">
-                            <p class="nome">Camiseta Regular - Butterfly Marrom</p>
-                            <button class="excluir"><svg xmlns="http://www.w3.org/2000/svg" height="25px"
-                                    viewBox="0 -960 960 960" width="25px" fill="#22100c">
-                                    <path
-                                        d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
-                                </svg></button>
-                            <p class="tamanho">GG</p>
-                            <p class="valor">R$126,99</p>
-                            <div class="quantidade"><button>+</button> <span> 1 </span> <button>-</button></div>
-                        </div>
-
-
-
+                    <div class="lista" id="listaDaPageSacola">
                     </div>
                     <div class="valores">
                         <p id="subtotal">Subtotal</p>
@@ -234,6 +171,7 @@
     <script>
         inicializaSacola();
         renderizaSacola();
+        renderizaListaDaTelaSacola();
     </script>
 
 </body>

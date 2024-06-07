@@ -1,14 +1,15 @@
-img{
+img {
     width: 55%;
     height: 100%;
 }
 
-#content1{
+#content1 {
     background-color: var(--color-black);
     overflow-x: hidden;
     overflow-y: hidden;
 }
-#content1 a #bannersubTitle{
+
+#content1 a #bannersubTitle {
     color: var(--color-blue);
     width: 50%;
     position: relative;
@@ -17,7 +18,8 @@ img{
     font-size: 40px;
     font-family: Archivo;
 }
-#content1 a #bannerTitle{
+
+#content1 a #bannerTitle {
     width: 50%;
     color: var(--color-white);
     position: relative;
@@ -26,34 +28,39 @@ img{
     font-size: 90px;
     font-family: Rubik;
 }
-#content1 a #floco1{
+
+#content1 a #floco1 {
     position: relative;
     bottom: 27rem;
     left: 53rem;
 }
-#content1 a #floco2{
+
+#content1 a #floco2 {
     position: relative;
     bottom: 40rem;
     left: 70rem;
 }
-#content1 a #floco3{
+
+#content1 a #floco3 {
     position: relative;
     bottom: 35rem;
     left: 30rem;
 }
-#content1 a #floco4{
+
+#content1 a #floco4 {
     position: relative;
     bottom: 21rem;
     left: 20rem;
 }
-#content1 a #floco5{
+
+#content1 a #floco5 {
     position: relative;
     bottom: 23rem;
     left: -28rem;
 }
 
 
-#content1 a #img1{
+#content1 a #img1 {
     width: 25%;
     height: 100%;
     position: relative;
@@ -65,50 +72,61 @@ img{
     display: grid;
     grid-template-rows: 50vh 70vh 8vh 80vh 8vh 100vh;
 }
-.card{
+
+.card {
     height: 100%;
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 33% 34% 33%;
 }
-.card a{
+
+.card a {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.card #oferta2{
+
+.card #oferta2 {
     justify-content: center;
 }
-.card #oferta3{
+
+.card #oferta3 {
     justify-content: right;
 }
-.card a .cardContent{ 
+
+.card a .cardContent {
     height: calc(100% - 5rem);
     width: calc(100% - 2rem);
     background-color: beige;
     display: flex;
     flex-direction: column;
 }
-.card a .cardContent .imgCard{
+
+.card a .cardContent .imgCard {
     height: 70%;
 }
-.card a .cardContent .descCard{
+
+.card a .cardContent .descCard {
     padding: 1rem;
 }
-.card a .cardContent .btnCard{
+
+.card a .cardContent .btnCard {
     padding: 1rem;
     display: flex;
     justify-content: right;
 }
-#content2Button{
+
+#content2Button {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-   justify-content: center;
-}#content2Button button{
+    justify-content: center;
+}
+
+#content2Button button {
     height: 90%;
     width: 20%;
     border-radius: 0.4rem;
@@ -117,54 +135,65 @@ img{
     color: var(--color-black);
     transition-duration: 0.2s;
 }
-#content2Button button:hover{
+
+#content2Button button:hover {
     background-color: var(--color-yellow);
     color: var(--color-white);
     cursor: pointer;
     scale: 1.1;
 }
-#content3{
+
+#content3 {
     align-content: center;
 }
-#content3 a{
+
+#content3 a {
     height: 80%;
     width: 100%;
     display: flex;
     align-items: center;
     background-color: var(--color-blue);
-}#content3 a img{
+}
+
+#content3 a img {
     width: 30%;
     height: 85%;
     position: relative;
 }
-#content3 a #titulo{
+
+#content3 a #titulo {
     width: 100%;
     position: relative;
-    transform: translate(68%,50%);
+    transform: translate(68%, 50%);
     text-align: center;
     font-size: 25px;
     font-family: Rubik;
     z-index: 1;
 }
-#content3 a #skate1{
+
+#content3 a #skate1 {
     right: 23rem;
     top: 2rem;
 }
-#content3 a #skate2{
+
+#content3 a #skate2 {
     right: 15rem;
     bottom: 4rem;
 }
-#content3 a #skate3{
+
+#content3 a #skate3 {
     right: 8rem;
     top: 2rem;
 }
-#content3 a #logoBranca{
+
+#content3 a #logoBranca {
     width: 7%;
     height: 20%;
     right: 2rem;
     top: 8rem;
 }
-#content4Title{
+
+#content4Title {
     width: 90%;
     height: 100%;
     margin: auto;
@@ -175,24 +204,28 @@ img{
     color: var(--color-white);
     border-radius: 0.4rem;
 }
-.cardPopular{
+
+.cardPopular {
     height: 100%;
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 33% 34% 33%;
 }
-.cardPopular img{
+
+.cardPopular img {
     height: 100%;
     width: 95%;
 }
-.cardPopular a{
+
+.cardPopular a {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.cardPopular a .cardContent{ 
+
+.cardPopular a .cardContent {
     height: calc(100% - 4rem);
     width: calc(100% - 4rem);
     background-color: var(--color-white);
@@ -202,29 +235,34 @@ img{
     box-shadow: 0px 12px 18px 4px rgba(10, 13, 34, 0.281);
     transition-duration: 0.4s;
 }
-.cardPopular a .cardContent:hover{
+
+.cardPopular a .cardContent:hover {
     scale: 1.05;
 }
-.cardPopular a .cardContent .imgCard{
+
+.cardPopular a .cardContent .imgCard {
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: end;
 }
-.cardPopular a .cardContent .descCard{
-    height: 7%; 
+
+.cardPopular a .cardContent .descCard {
+    height: 7%;
     padding: 0 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-blue);
 }
-.cardPopular a .cardContent .descCard p{
+
+.cardPopular a .cardContent .descCard p {
     color: var(--color-black);
     font-size: 16px;
     font-weight: bold;
 }
-.cardPopular a .cardContent .btnCard{
+
+.cardPopular a .cardContent .btnCard {
     height: 13%;
     padding: 0 1rem 1rem;
     display: flex;
@@ -233,23 +271,30 @@ img{
     background-color: var(--color-blue);
     border-radius: 0 0 0.4rem 0.7rem;
 }
-.cardPopular a .cardContent .btnCard p{
+
+.cardPopular a .cardContent .btnCard p {
     text-align: center;
     align-content: center;
     height: 90%;
     padding: 0.5rem 0 0.5rem;
     font-size: 35px;
 }
-.cardPopular a .cardContent .btnCard p span{
+
+.cardPopular a .cardContent .btnCard p span {
     font-weight: normal;
     text-decoration: line-through;
     color: var(--color-blue);
 }
-.cardPopular .card2{
+
+.cardPopular .card2 {
     justify-content: center;
 }
-.cardPopular .card3{
+
+.cardPopular .card3 {
     justify-content: right;
 }
 
-
+#iconeLixeiraDentroDaSacola {
+    height: 50%;
+    width: 50%;
+}
