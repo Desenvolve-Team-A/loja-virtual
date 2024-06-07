@@ -9,8 +9,8 @@
         @import "indexStyle.css";
         @import "default.css";
     </style>
-    <script src="produtos.js"></script>
     <script src="default.js"></script>
+    <script src="produtos.js"></script>
     <script src="menuSacola.js" defer></script>
     <link rel="shortcut icon" type="imagex/png" href="imagensLoja/Logos/LogoCircular.png">
 </head>
@@ -126,7 +126,7 @@
                     <p id="valorProduto">R$129,99</p>
                 </div>
             </div>
-            <a href="javascript:navegarParaCompra()">
+            <a href="#">
                 <p>Finalizar Compra</p>
             </a>
         </div>
@@ -134,93 +134,154 @@
 
     <main>
         <div class="container" id="container">
-            <div style="background-color: brown;" id="content1">
+            <div id="content1">
                 <a href="#">
-                    <img src="Images/content1foto.png" alt="">
-                    <button>Compre agora</button>
+                    <img id="img1" src="imagensLoja/homem capuz.png" alt="">
+                    <p id="bannersubTitle">Nova Coleção de</p>
+                    <p id="bannerTitle">INVERNO!</p>
+                    <svg id="floco1" width="100px" height="100px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 9V15M12 9L16 5M12 9L8 5M12 9V3M12 15L16 19M12 15L8 19M12 15V21M3 12H9M21 12H15M5 8L9 12M9 12L5 16M9 12H15M15 12L19 8M15 12L19 16"
+                                stroke="#fcfcfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                    <svg id="floco2" width="100px" height="100px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 9V15M12 9L16 5M12 9L8 5M12 9V3M12 15L16 19M12 15L8 19M12 15V21M3 12H9M21 12H15M5 8L9 12M9 12L5 16M9 12H15M15 12L19 8M15 12L19 16"
+                                stroke="#fcfcfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                    <svg id="floco3" width="100px" height="100px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 9V15M12 9L16 5M12 9L8 5M12 9V3M12 15L16 19M12 15L8 19M12 15V21M3 12H9M21 12H15M5 8L9 12M9 12L5 16M9 12H15M15 12L19 8M15 12L19 16"
+                                stroke="#fcfcfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                    <svg id="floco4" width="100px" height="100px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 9V15M12 9L16 5M12 9L8 5M12 9V3M12 15L16 19M12 15L8 19M12 15V21M3 12H9M21 12H15M5 8L9 12M9 12L5 16M9 12H15M15 12L19 8M15 12L19 16"
+                                stroke="#fcfcfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                    <svg id="floco5" width="100px" height="100px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 9V15M12 9L16 5M12 9L8 5M12 9V3M12 15L16 19M12 15L8 19M12 15V21M3 12H9M21 12H15M5 8L9 12M9 12L5 16M9 12H15M15 12L19 8M15 12L19 16"
+                                stroke="#fcfcfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
                 </a>
             </div>
             <div class="card">
-                <a href="javascript:navegarParaProduto(1, 'camisetas')" class="card1" id="oferta1">
+                <a href="##" class="card1" id="oferta1">
                     <div class="cardContent">
                         <div class="imgCard">
-                            <img src="Images/item.png" alt="">
+                            <img src="imagensLoja/moletom/moletom1.png" alt="">
                         </div>
                         <div class="descCard">
-                            <p>Camisa Branca Básica</p>
+                            <p>Moletom 1</p>
                         </div>
                         <div class="btnCard" onclick="navegarParaProduto(1, 'camisetas')">
                             <p>RS 124,99</p><button>Ver Mais</button>
                         </div>
                     </div>
                 </a>
-                <a href="javascript:navegarParaProduto(2, 'calcas')" class="card2" id="oferta2">
+                <a href="#" class="card2" id="oferta2">
                     <div class="cardContent">
-                        <div class="imgCard"><img src="Images/item.png" alt=""></div>
+                        <div class="imgCard"><img src="imagensLoja/moletom/moletom2.png" alt=""></div>
                         <div class="descCard">
-                            <p>Casaco Preto Masculino</p>
+                            <p>Moletom 2</p>
                         </div>
                         <div class="btnCard">
-                            <p>RS 124,99</p><button onclick="navegarParaProduto(2, 'calcas')">Ver Mais</button>
+                            <p>RS 124,99</p><button>Ver Mais</button>
                         </div>
                     </div>
                 </a>
-                <a href="javascript:navegarParaProduto(1, 'moletons')" class="card3" id="oferta3">
+                <a href="#" class="card3" id="oferta3">
                     <div class="cardContent">
-                        <div class="imgCard"><img src="Images/item.png" alt=""></div>
+                        <div class="imgCard"><img src="imagensLoja/moletom/moletom3.png" alt=""></div>
                         <div class="descCard">
-                            <p>Calça Cargo Preta</p>
+                            <p>Moletom 3</p>
                         </div>
                         <div class="btnCard">
-                            <p>RS 124,99</p><button onclick="navegarParaProduto(1, 'moletons')">Ver Mais</button>
+                            <p>RS 124,99</p><button>Ver Mais</button>
                         </div>
                     </div>
                 </a>
             </div>
             <div id="content2Button">
-                <button>Ver Mais</button>
+                <button>Ir para Coleção</button>
             </div>
 
 
             <div id="content3">
                 <a href="#">
-                    <img src="Images/content1foto.png" alt="">
+                    <p id="titulo">Encontre a camisa ideal para todas as situações</p>
+                    <img id="skate1" src="imagensLoja/skate3.png" alt="">
+                    <img id="skate2" src="imagensLoja/skate2.png" alt="">
+                    <img id="skate3" src="imagensLoja/skate1.png" alt="">
                 </a>
             </div>
 
 
-            <div id="content4Title" style="background-color: brown;">
+            <div id="content4Title">
                 <h2>Produtos Populares</h2>
             </div>
-            <div id="content4">
-                <a href="#" id="popular1">
-                    <div class="cardPopular">
-                        <div class="imgCardPopular"><img src="Images/item.png" alt=""></div>
-                        <div class="descCardPopular">
-                            <p>Camisa Branca Básica</p>
+            <div class="cardPopular">
+                <a href="##" class="card1" id="popular1">
+                    <div class="cardContent">
+                        <div class="imgCard">
+                            <img src="imagensLoja/camisas/camisa4.png" alt="">
                         </div>
-                        <div class="btnCardPopular"><button>Ver Mais</button></div>
+                        <div class="descCard">
+                            <p>Camisa 1</p>
+                        </div>
+                        <div class="btnCard" onclick="navegarParaProduto(1, 'camisetas')">
+                            <p>RS 124,99</p>
+                        </div>
                     </div>
                 </a>
-                <a href="#" id="popular2">
-                    <div class="cardPopular">
-                        <div class="imgCardPopular"><img src="Images/item.png" alt=""></div>
-                        <div class="descCardPopular">
-                            <p>Casaco Preto Masculino</p>
+                <a href="#" class="card2" id="popular2">
+                    <div class="cardContent">
+                        <div class="imgCard"><img src="imagensLoja/calca/calca3.png" alt=""></div>
+                        <div class="descCard">
+                            <p>Calça 2</p>
                         </div>
-                        <div class="btnCardPopular"><button>Ver Mais</button></div>
+                        <div class="btnCard">
+                            <p>RS 124,99</p>
+                        </div>
                     </div>
                 </a>
-                <a href="#" id="popular3">
-                    <div class="cardPopular">
-                        <div class="imgCardPopular"><img src="Images/item.png" alt=""></div>
-                        <div class="descCardPopular">
-                            <p>Calça Cargo Preta</p>
+                <a href="#" class="card3" id="popular3">
+                    <div class="cardContent">
+                        <div class="imgCard"><img src="imagensLoja/moletom/moletom4.png" alt=""></div>
+                        <div class="descCard">
+                            <p>Moletom 3</p>
                         </div>
-                        <div class="btnCardPopular"><button>Ver Mais</button></div>
+                        <div class="btnCard">
+                            <p>RS 124,99</p>
+                        </div>
                     </div>
                 </a>
-
             </div>
         </div>
     </main>

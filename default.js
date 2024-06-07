@@ -54,9 +54,6 @@ function navegarParaProduto(idProduto, categoria) {
         let produtoSelecionadoString = JSON.stringify(produtoSelecionado);
         localStorage.setItem("produtoSelecionadoString", produtoSelecionadoString);
         window.location.href = "produto.html";
-        window.onload = function () {
-            carregarProduto();
-        };
     } else if (categoria == "calcas") {
         let calcasString = localStorage.getItem("listaDeCalcasJSON");
         let calcas = JSON.parse(calcasString);
