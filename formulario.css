@@ -1,23 +1,23 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
 #conteiner {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0 60px;
+    justify-items: center;
+    margin: 3%;
     grid-template-columns: repeat(3, 1fr);
 }
 #form-dados-pessoais, #form-entrega, #form-pagamento{
     border: 1px solid transparent;
     border-radius: 3px;
-    width: 25vw;
+    width: 80%;
     padding: 10px;
-    height: 60vh;
-    margin: 10vh 0px;
+    height: 80%;
+    margin: 10vh 0;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.736);
+    justify-items: center;
+    box-shadow: 0px 12px 18px 4px rgba(10, 13, 34, 0.281);
+    background-color: whitesmoke;
 }
 #span {
     display: flex;
@@ -28,27 +28,31 @@
 }
 .imagem{
     margin: 5px 0;
-    width: 23px;
+    width: 25px;
 }
 .titulo {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#nome, #telefone {
+#nome, #email, 
+#cpf, #telefone, #cep,
+#endereço, #numero, #complemento {
     padding: 5px;
     margin: 5px 0;
     width: 20vw;
     border-radius: 5px;
     border: 1px solid #ccc;
-    outline: none;
-    background-image: url(assets/ico-ready.png);
-    background-position: right top;
-    background-repeat: no-repeat; 
+    outline: none; 
 }
-#nome:focus, #telefone:focus{
-    box-shadow: 1px 2px 3px rgba(159, 159, 159, 0.736);
+#nome:focus, #email:focus, 
+#cpf:focus, #telefone:focus, #cep:focus,
+#endereço:focus, #numero:focus, #complemento:focus {
+    box-shadow: 0px 4px 5px 4px rgba(10, 13, 34, 0.127);
 }
-#nome::placeholder, #telefone::placeholder {
+#nome::placeholder, #email::placeholder, 
+#cpf::placeholder, #telefone::placeholder,
+#cep::placeholder, #endereço::placeholder, 
+#numero::placeholder, #complemento::placeholder {
     color: #b3b3b3;
 }
 #texto {
@@ -63,15 +67,20 @@
     margin-left: 5px;
 }
 .botao {
-    border: 1px solid rgba(128, 128, 128, 0.737);
-    border-radius: 5px;
-    padding: 7px 10px;
-    background-color: #d81cd8;
-    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.736);
-    transition-duration: 0.4s;
+    padding: 2%;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    transition-duration: 0.2s;
     cursor: pointer;
 }
-#botao {
+.botao:hover, .cod-boleto button:hover {
+    background-color: var(--color-white);
+    color: var(--color-yellow);
+    box-shadow: 0px 4px 5px 4px rgba(10, 13, 34, 0.127);
+}
+#div-botao {
     margin-top: 35px;
     display: flex;
     justify-content: center;
@@ -81,6 +90,82 @@
     color: red;
     display: none;
 }
-#boleto, input [type="radio"] {
-    color: aqua;
+.hidden {
+    display: none;
+}
+#numero-boleto{
+    overflow-x: scroll;
+    color: var(--color-black);
+    padding: 5%;
+}
+#numero-boleto::-webkit-scrollbar {
+    background: transparent;
+    height: 6px;
+}
+#numero-boleto::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+.cod-boleto button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: var(--color-lightYellow);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 5px 4px rgba(10, 13, 34, 0.127);
+}
+
+#txt-boleto, #txt-pix {
+    color: black;
+    font-size: 14px;
+    margin: 5px;
+    font-weight: 600;
+}
+#info-cartao, #parcelamento {
+    padding: 0 10px;
+}
+#info-cartao-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+    margin-top:5px ;
+}   
+#numero-cartao, #parcelas{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 20vw;
+    padding: 4px;
+    margin-bottom: 3px;
+    outline: none; 
+}
+#codigo-seguranca, #validade-cartao {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 7vw;
+    padding: 4px;
+    outline: none; 
+}
+#codigo-seguranca:focus, #validade-cartao:focus, 
+#parcelas:focus, #numero-cartao:focus {
+    box-shadow: 0px 4px 5px 4px rgba(10, 13, 34, 0.127);
+}
+#num-cartao, #codigo-cartao, #data-validade, #qtd-parcelas {
+    font-size: 12px;
+}
+#qrcode {
+    width: 30%;
+}
+#code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#valor-total-compra-final {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    margin-top: 10%;
+    background-color: var(--color-grey);
+    border-radius: 5px;
 }
