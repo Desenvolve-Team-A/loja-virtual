@@ -179,7 +179,7 @@
                         <div class="cod-boleto">
                             <p id="txt-boleto">Código do boleto</p>
                             <p id="numero-boleto">26090712830922012628912100000004197460000010000</p>
-                            <button onclick="">Copiar</button>
+                            <button onclick="copyToCliptoboard()">Copiar</button>
                         </div>
                     </div>
                     <span class="error" id="error-radio">Selecione uma opção de pagamento.</span>
@@ -189,7 +189,7 @@
                     <div id="valor-total">R$99,99</div>
                 </div>
                 <div id="div-botao">
-                    <input type="submit" class="botao" value="Finalizar compra">
+                    <input type="submit" class="botao" value="Finalizar compra" onclick="finalizou()">
                 </div>
             </form>
         </div>
