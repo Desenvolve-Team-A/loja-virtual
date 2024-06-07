@@ -1,19 +1,28 @@
 @import "default.css";
-img{
+
+img {
     width: 55%;
     height: 100%;
 }
+
 .container {
     width: 100%;
     display: grid;
     grid-template-rows: 10vh 70vh 70vh;
 }
-#title{
+
+#title {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-black);
 }
-#titleContent{
+
+#titleContent {
     color: var(--color-white);
+}
+
+#iconeLixeiraDentroDaSacola {
+    height: 50%;
+    width: 50%;
 }

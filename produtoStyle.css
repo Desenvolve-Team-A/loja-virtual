@@ -1,4 +1,3 @@
-
 .container {
     width: 90%;
     margin: auto;
@@ -6,41 +5,48 @@
     grid-template-columns: 60% 40%;
     grid-template-rows: 80vh 100vh;
 }
-.container div{
+
+.container div {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container .imgProduto{
-    box-shadow: inset 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+.container .imgProduto {
+    box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     background-color: var(--color-white);
 }
-.container .imgProduto img{
+
+.container .imgProduto img {
     width: 55%;
     height: 100%;
 }
-.container .imgProduto .logo{
+
+.container .imgProduto .logo {
     position: absolute;
     width: 55px;
     height: 55px;
     left: 5%;
     bottom: 7%;
 }
-.container .infoProduto{
+
+.container .infoProduto {
     position: sticky;
     top: 13vh;
     background-color: var(--color-white);
 }
-.infoProduto .contentInfo{
+
+.infoProduto .contentInfo {
     display: flex;
     flex-direction: column;
     align-content: center;
     height: 100%;
     width: 100%;
 }
-.infoProduto .contentInfo h2{
+
+.infoProduto .contentInfo h2 {
     box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.281);
     width: 90%;
     height: 15%;
@@ -51,17 +57,20 @@
     padding: 1rem 5% 1rem;
     color: var(--color-white);
 }
-.infoProduto .contentInfo h3{
+
+.infoProduto .contentInfo h3 {
     height: 14%;
     align-content: center;
 }
-.infoProduto .contentInfo .quantidade{
+
+.infoProduto .contentInfo .quantidade {
     height: 20%;
     display: flex;
     flex-direction: row;
-    
+
 }
-.infoProduto .contentInfo .quantidade button{
+
+.infoProduto .contentInfo .quantidade button {
     height: 40%;
     width: 8%;
     cursor: pointer;
@@ -70,39 +79,45 @@
     transition-duration: 0.2s;
     border-radius: 0.4rem;
 }
-.infoProduto .contentInfo .quantidade button:hover{
+
+.infoProduto .contentInfo .quantidade button:hover {
     background-color: var(--color-yellow);
     color: var(--color-white);
- }
- .infoProduto .contentInfo .quantidade span{
+}
+
+.infoProduto .contentInfo .quantidade span {
     font-size: 20px;
     font-weight: bold;
     width: 10%;
     text-align: center;
 }
 
-.infoProduto .contentInfo p{
+.infoProduto .contentInfo p {
     width: 100%;
     text-align: center;
     align-content: end;
     font-weight: bolder;
     color: var(--color-black);
 }
-.infoProduto .contentInfo .valor{
+
+.infoProduto .contentInfo .valor {
     height: 20%;
     font-size: 35px;
     align-content: center;
 }
-.infoProduto .contentInfo .tamanhoTile{
+
+.infoProduto .contentInfo .tamanhoTile {
     height: 10%;
     font-size: 18px;
 }
-.infoProduto .contentInfo .tamanhos{
+
+.infoProduto .contentInfo .tamanhos {
     height: 16%;
     display: flex;
     flex-direction: row;
 }
-.infoProduto .contentInfo .tamanhos button{
+
+.infoProduto .contentInfo .tamanhos button {
     height: 60%;
     width: 15%;
     cursor: pointer;
@@ -111,11 +126,13 @@
     transition-duration: 0.2s;
     border-radius: 0.4rem;
 }
-.infoProduto .contentInfo .tamanhos button:hover{
-   background-color: var(--color-yellow);
-   color: var(--color-white);
+
+.infoProduto .contentInfo .tamanhos button:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
 }
-.infoProduto .contentInfo #btnComprar{
+
+.infoProduto .contentInfo #btnComprar {
     margin: 10% 0 10%;
     height: 14%;
     width: 60%;
@@ -126,34 +143,39 @@
     color: var(--color-black);
     transition-duration: 0.2s;
 }
-.infoProduto .contentInfo #btnComprar:hover{
+
+.infoProduto .contentInfo #btnComprar:hover {
     color: var(--color-white);
 }
 
-.container .descProduto{
+.container .descProduto {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 }
-.descProduto{
+
+.descProduto {
     background-color: var(--color-blue);
 }
-.descProduto #nome{
+
+.descProduto #nome {
     height: 16%;
     font-size: 20px;
     padding: 5% 5% 0;
     align-content: center;
-   
+
     color: var(--color-white);
 }
-.descProduto #desc{
+
+.descProduto #desc {
     height: 40%;
     font-size: 18px;
     padding: 0 5% 5%;
     align-content: center;
 }
-.descProduto .caracteristicasTitle{
+
+.descProduto .caracteristicasTitle {
     height: 10%;
     width: 90%;
     background-color: var(--color-black);
@@ -163,14 +185,16 @@
     font-size: 20px;
     font-family: Archivo;
 }
-.descProduto .caracteristicas{
+
+.descProduto .caracteristicas {
     height: 30%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
-    
-}   
-.descProduto .caracteristicas p{
+
+}
+
+.descProduto .caracteristicas p {
     font-weight: 500;
     text-align: left;
     align-content: center;
@@ -179,4 +203,9 @@
     width: 80%;
     height: 100%;
     padding: 0 10% 0;
+}
+
+#iconeLixeiraDentroDaSacola {
+    height: 50%;
+    width: 50%;
 }
